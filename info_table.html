@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>情报总表 - 前沿技术情报与预警平台</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <header>
+    <h1>情报总表</h1>
+    <nav>
+      <a href="index.html">首页工作台</a>
+      <a href="info_table.html">情报总表</a>
+      <a href="upload_review.html">上传&复核</a>
+      <a href="drafts.html">草稿管理</a>
+      <a href="excel_import.html">Excel 导入</a>
+      <a href="info_detail.html">情报详情</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section sidebar-layout">
+      <aside class="panel">
+        <h2>筛选器</h2>
+        <div class="card-list">
+          <div>
+            <label class="meta">领域</label>
+            <input type="text" placeholder="搜索领域" />
+            <div class="meta">能源与化工 / 碳捕集 / 直接空气捕集</div>
+          </div>
+          <div>
+            <label class="meta">时间范围</label>
+            <div class="toolbar">
+              <input type="date" value="2024-01-01" />
+              <input type="date" value="2024-03-31" />
+            </div>
+          </div>
+          <div>
+            <label class="meta">新旧技术</label>
+            <select>
+              <option>全部</option>
+              <option>新技术</option>
+              <option>已有技术</option>
+            </select>
+          </div>
+          <div>
+            <label class="meta">来源类型</label>
+            <select>
+              <option>新闻 / 报告 / 公告</option>
+            </select>
+          </div>
+          <div>
+            <label class="meta">情报类型</label>
+            <select>
+              <option>技术突破 / 项目进展 / 产品更新</option>
+            </select>
+          </div>
+          <div>
+            <label class="meta">重要度</label>
+            <input type="range" min="0" max="100" />
+          </div>
+          <div>
+            <label class="meta">预警</label>
+            <select>
+              <option>全部</option>
+              <option>仅预警</option>
+              <option>无预警</option>
+            </select>
+          </div>
+          <div>
+            <label class="meta">Comment</label>
+            <select>
+              <option>全部</option>
+              <option>有 Comment</option>
+              <option>无 Comment</option>
+            </select>
+          </div>
+          <button class="secondary">隐藏筛选器</button>
+        </div>
+      </aside>
+
+      <section>
+        <div class="section">
+          <h2>领域快速跳转</h2>
+          <input type="text" placeholder="输入领域名称" />
+        </div>
+
+        <div class="section">
+          <h2>关键词搜索</h2>
+          <input type="text" placeholder="搜索标题 / 正文 / comment" />
+        </div>
+
+        <div class="section">
+          <h2>情报列表</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>标题</th>
+                <th>摘要片段</th>
+                <th>标签</th>
+                <th>预警</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  直接空气捕集成本首次逼近 <span class="highlight">60 USD/tCO2</span>
+                  <div class="meta">2024-02-18 · 重要度 88</div>
+                </td>
+                <td>
+                  …在中试规模下实现了 <span class="highlight">60 USD/tCO2</span> 的边际成本…
+                  <div class="meta">评论：建议关注材料稳定性与规模化瓶颈。</div>
+                </td>
+                <td>
+                  <span class="badge">DAC</span>
+                  <span class="badge">成本</span>
+                </td>
+                <td><span class="badge alert">预警中</span></td>
+                <td class="toolbar">
+                  <button class="secondary">编辑预警</button>
+                  <button class="secondary">展开上下文</button>
+                  <a href="info_detail.html">全文</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  绿氢项目启动 500MW 电解槽招标
+                  <div class="meta">2024-03-02 · 重要度 72</div>
+                </td>
+                <td>
+                  …要求供应商提供 65% 以上的系统效率…
+                  <div class="meta">评论：对供应链价格压力显著。</div>
+                </td>
+                <td>
+                  <span class="badge">绿氢</span>
+                  <span class="badge">招标</span>
+                </td>
+                <td><span class="badge muted">无预警</span></td>
+                <td class="toolbar">
+                  <button class="secondary">新增预警</button>
+                  <button class="secondary">展开上下文</button>
+                  <a href="info_detail.html">全文</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>© <span data-current-year></span> 情报预警平台样机</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

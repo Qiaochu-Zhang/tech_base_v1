@@ -1,0 +1,16 @@
+[
+  {
+    "info_item_id": "info-001",
+    "name": "捕集成本",
+    "value_number": 60,
+    "unit": "USD/tCO2",
+    "source": "新闻稿第 3 段"
+  },
+  {
+    "info_item_id": "info-002",
+    "name": "电解槽规模",
+    "value_number": 500,
+    "unit": "MW",
+    "source": "招标公告"
+  }
+]

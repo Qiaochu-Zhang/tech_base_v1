@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel 导入 - 前沿技术情报与预警平台</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <header>
+    <h1>Excel 批量导入</h1>
+    <nav>
+      <a href="index.html">首页工作台</a>
+      <a href="info_table.html">情报总表</a>
+      <a href="upload_review.html">上传&复核</a>
+      <a href="drafts.html">草稿管理</a>
+      <a href="excel_import.html">Excel 导入</a>
+      <a href="info_detail.html">情报详情</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>模板下载</h2>
+      <div class="toolbar">
+        <button>下载模板</button>
+        <span class="meta">模板字段：title / published_at / source_url / source_types / info_types / domains ...</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>上传并预览</h2>
+      <div class="panel">
+        <input type="file" accept=".xlsx" />
+        <div class="meta" style="margin-top: 12px;">上传后展示解析预览、错误提示，并可批量生成草稿。</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>预览结果</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>行号</th>
+            <th>标题</th>
+            <th>领域</th>
+            <th>状态</th>
+            <th>错误</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>直接空气捕集成本突破</td>
+            <td>直接空气捕集</td>
+            <td><span class="badge">通过</span></td>
+            <td class="meta">-</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>绿氢项目招标</td>
+            <td>绿氢</td>
+            <td><span class="badge alert">错误</span></td>
+            <td class="meta">缺少 source_types</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="toolbar" style="margin-top: 12px;">
+        <button class="secondary">批量生成草稿</button>
+        <button class="secondary">进入草稿管理</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span data-current-year></span> 情报预警平台样机</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

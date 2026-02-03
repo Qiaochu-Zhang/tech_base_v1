@@ -1,0 +1,47 @@
+[
+  {
+    "id": "info-001",
+    "title": "直接空气捕集成本首次逼近 60 USD/tCO2",
+    "content": "某初创公司在北美发布了最新 DAC 模组，宣称在中试规模下实现了 60 USD/tCO2 的边际成本。团队通过吸附材料与再生热耦合将能耗降低 12%。",
+    "published_at": "2024-02-18",
+    "status": "published",
+    "domain_ids": ["d1-1-1"],
+    "primary_domain_id": "d1-1-1",
+    "source_types": ["新闻", "报告"],
+    "info_types": ["技术突破"],
+    "tags": ["DAC", "成本"],
+    "importance_score": 88,
+    "is_new_tech": true,
+    "comment": "建议关注材料稳定性与规模化瓶颈。"
+  },
+  {
+    "id": "info-002",
+    "title": "绿氢项目启动 500MW 电解槽招标",
+    "content": "欧洲某能源集团启动 500MW 电解槽招标，要求供应商提供 65% 以上的系统效率，并在 2026 年完成一期投运。",
+    "published_at": "2024-03-02",
+    "status": "published",
+    "domain_ids": ["d1-2-1"],
+    "primary_domain_id": "d1-2-1",
+    "source_types": ["公告"],
+    "info_types": ["项目进展"],
+    "tags": ["绿氢", "招标"],
+    "importance_score": 72,
+    "is_new_tech": false,
+    "comment": "对供应链价格压力显著。"
+  },
+  {
+    "id": "info-003",
+    "title": "协作机器人新增触觉传感套件",
+    "content": "某协作机器人厂商发布了触觉传感套件，支持 0.5N 分辨率力反馈，并能在 10ms 内完成力控闭环。",
+    "published_at": "2024-01-25",
+    "status": "draft",
+    "domain_ids": ["d2-1-1", "d2-1-2"],
+    "primary_domain_id": "d2-1-1",
+    "source_types": ["发布会"],
+    "info_types": ["产品更新"],
+    "tags": ["触觉", "协作机器人"],
+    "importance_score": 65,
+    "is_new_tech": false,
+    "comment": "需核对与现有传感器兼容性。"
+  }
+]

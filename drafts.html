@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>草稿管理 - 前沿技术情报与预警平台</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <header>
+    <h1>草稿管理</h1>
+    <nav>
+      <a href="index.html">首页工作台</a>
+      <a href="info_table.html">情报总表</a>
+      <a href="upload_review.html">上传&复核</a>
+      <a href="drafts.html">草稿管理</a>
+      <a href="excel_import.html">Excel 导入</a>
+      <a href="info_detail.html">情报详情</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>草稿列表</h2>
+      <div class="toolbar">
+        <input type="text" placeholder="搜索草稿标题" style="max-width: 280px;" />
+        <button class="secondary">批量生成 AI 建议</button>
+      </div>
+      <table class="table" style="margin-top: 12px;">
+        <thead>
+          <tr>
+            <th>标题</th>
+            <th>领域</th>
+            <th>创建时间</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>协作机器人新增触觉传感套件</td>
+            <td>工业机器人 / 协作机器人</td>
+            <td>2024-01-25</td>
+            <td><span class="badge">Draft</span></td>
+            <td class="toolbar">
+              <button class="secondary">继续提交 AI</button>
+              <button class="secondary">编辑</button>
+              <button class="danger">删除</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>© <span data-current-year></span> 情报预警平台样机</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
