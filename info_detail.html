@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>情报详情 - 前沿技术情报与预警平台</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <header>
+    <h1>情报详情</h1>
+    <nav>
+      <a href="index.html">首页工作台</a>
+      <a href="info_table.html">情报总表</a>
+      <a href="upload_review.html">上传&复核</a>
+      <a href="drafts.html">草稿管理</a>
+      <a href="excel_import.html">Excel 导入</a>
+      <a href="info_detail.html">情报详情</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="flex flex-wrap" style="justify-content: space-between;">
+        <div>
+          <h2>直接空气捕集成本首次逼近 60 USD/tCO2</h2>
+          <div class="meta">发布：2024-02-18 · 领域：直接空气捕集</div>
+        </div>
+        <div class="toolbar">
+          <button class="secondary">编辑预警</button>
+          <button class="secondary">返回列表</button>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 16px;">
+        <h3>正文</h3>
+        <p>
+          某初创公司在北美发布了最新 DAC 模组，宣称在中试规模下实现了 60 USD/tCO2 的边际成本。
+          团队通过吸附材料与再生热耦合将能耗降低 12%。
+        </p>
+        <p class="meta">Comment：建议关注材料稳定性与规模化瓶颈。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>指标与预警</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>指标值</h3>
+          <ul>
+            <li>捕集成本：60 USD/tCO2</li>
+            <li>能耗：1.8 MWh/tCO2</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>预警状态</h3>
+          <span class="badge alert">预警中</span>
+          <p class="meta">预警标题：DAC 成本突破警报</p>
+          <p class="meta">复核意见：建议评估供应链可复制性。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span data-current-year></span> 情报预警平台样机</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

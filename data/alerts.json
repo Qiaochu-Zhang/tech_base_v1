@@ -1,0 +1,16 @@
+[
+  {
+    "id": "alert-001",
+    "info_item_id": "info-001",
+    "status": "active",
+    "source": "auto",
+    "manual_override": false,
+    "dismiss_reason": null,
+    "alert_title": "DAC 成本突破警报",
+    "alert_body": "成本下降到历史区间下限，可能改变行业对标标准。",
+    "reviewer_comment": "建议评估供应链可复制性。",
+    "color": "orange",
+    "created_at": "2024-02-18",
+    "expires_at": "2024-05-18"
+  }
+]
